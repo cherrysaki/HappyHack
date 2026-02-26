@@ -4,9 +4,19 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: sans-serif;
   color: #333;
+}
+
+.container {
+  width: 100%;
+  padding: 60px 20px;
+  margin: 0 auto;
 }
 
 a {
@@ -82,26 +92,14 @@ nav li a:hover {
   margin: 30px 0px 0px;
 }
 
-.intro-section {
-  padding: 60px 20px;
-  width: 80%;
-  margin: 0 auto;
-}
-
 .intro-desc1,
 .intro-desc2 {
   width: 100%;
   display: flex;
-  /* gap: 50px; */
   margin-bottom: 64px;
   align-items: center;
   justify-content: center;
 }
-
-/* .container {
-  max-width: 1200px;
-  margin: 0 auto;
-} */
 
 .intro-desc-img {
   max-width: 500px;
@@ -153,7 +151,6 @@ nav li a:hover {
 .courses-section {
   position: relative;
   overflow: hidden;
-  padding: 60px 40px;
   background-color: #d6e5f9;
 }
 
@@ -247,12 +244,9 @@ nav li a:hover {
   background: #72cedd;
 }
 
-.images-section {
-  padding: 60px 150px;
-}
-
 .images-carousel {
-  padding: 60px 0;
+  margin: 0 80px 0;
+  padding: 60px;
 }
 
 .images-img {
@@ -261,7 +255,10 @@ nav li a:hover {
 }
 
 .slick-dots {
+  position: absolute;
   bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .slick-prev,
@@ -287,10 +284,6 @@ nav li a:hover {
 
 .slick-dots li.slick-active button:before {
   color: #000000;
-}
-
-.access-section {
-  padding: 60px 40px;
 }
 
 .map {
@@ -328,11 +321,6 @@ footer {
     padding: 60px;
   }
 
-  .intro-section {
-    width: 95%;
-    padding: 40px 20px;
-  }
-
   .intro-desc1,
   .intro-desc2 {
     flex-direction: column;
@@ -350,7 +338,7 @@ footer {
     width: 100%;
   }
 
-  .courses-section {
+  .container {
     padding: 40px 20px;
   }
 
@@ -362,10 +350,6 @@ footer {
   .courses-card {
     width: calc(50% - 10px);
     min-height: auto;
-  }
-
-  .images-section {
-    padding: 40px 20px;
   }
 
   .images-carousel {
@@ -397,6 +381,6 @@ footer {
   }
 
   .courses-card {
-    width: calc(50% - 10px);
+    width: 100%;
   }
 }
