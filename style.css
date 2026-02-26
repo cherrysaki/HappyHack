@@ -90,19 +90,27 @@ nav li a:hover {
 
 .intro-desc1,
 .intro-desc2 {
+  width: 100%;
   display: flex;
-  gap: 40px;
-  margin-bottom: 40px;
+  /* gap: 50px; */
+  margin-bottom: 64px;
   align-items: center;
+  justify-content: center;
 }
 
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
 .intro-desc-img {
-  width: 50%;
+  max-width: 500px;
 }
 
 .intro-desc-content {
   flex: 1;
-  max-width: 500px;
+  max-width: 400px;
+  margin: 20px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,9 +126,10 @@ nav li a:hover {
   display: inline-block;
   background: #3d5cdc;
   color: #fff;
-  padding: 10px 30px;
+  padding: 10px 50px;
   border-radius: 12px;
   font-weight: bold;
+  font-size: 20px;
   margin-top: 40px;
   transition: 0.3s;
 }
@@ -129,9 +138,10 @@ nav li a:hover {
   display: inline-block;
   background: #febf00;
   color: #fff;
-  padding: 10px 30px;
+  padding: 10px 50px;
   border-radius: 12px;
   font-weight: bold;
+  font-size: 20px;
   margin-top: 40px;
   transition: 0.3s;
 }
@@ -153,7 +163,7 @@ nav li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: -1;
 }
 
 .courses-section .section-title {
@@ -186,8 +196,7 @@ nav li a:hover {
 }
 
 .course-img {
-  width: 100px;
-  height: 100px;
+  max-height: 100px;
   margin: 40px auto;
   display: block;
   object-fit: contain;
@@ -315,6 +324,10 @@ footer {
     font-size: 22px;
   }
 
+  .header-logo {
+    padding: 60px;
+  }
+
   .intro-section {
     width: 95%;
     padding: 40px 20px;
@@ -323,7 +336,10 @@ footer {
   .intro-desc1,
   .intro-desc2 {
     flex-direction: column;
-    gap: 20px;
+  }
+  .intro-desc1 .regist-btn,
+  .intro-desc2 .regist-btn {
+    margin: 40px 0 40px;
   }
 
   .intro-desc2 img {
@@ -357,7 +373,7 @@ footer {
   }
 
   .access-section {
-    padding: 40px 20px;
+    padding: 40px 0px;
   }
 
   .map {
@@ -370,6 +386,10 @@ footer {
   .section-title {
     font-size: 28px;
     margin-bottom: 20px;
+  }
+
+  .header-logo {
+    padding: 30px;
   }
 
   .header-message {
